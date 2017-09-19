@@ -1,4 +1,5 @@
 #!/bin/sh
+source env_secrets_expand.sh
 set -e
 
 # Disabling nginx daemon mode

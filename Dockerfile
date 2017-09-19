@@ -16,6 +16,7 @@ RUN apk update \
 	&& apk del .build-deps \
 	&& rm -rf /var/cache/apk/*
 
+COPY env-secrets-expand.sh /env-secrets-expand.sh
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
