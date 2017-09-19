@@ -1,9 +1,8 @@
 #!/bin/sh
-# vim: set sw=2 sts=2 tw=80 :
 
 : ${ENV_SECRETS_DIR:=/run/secrets}
 
-function env_secret_debug()
+env_secret_debug()
 {
     if [ ! -z "$ENV_SECRETS_DEBUG" ]; then
         echo -e "\033[1m$@\033[0m"
